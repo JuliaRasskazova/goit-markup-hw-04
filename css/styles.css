@@ -244,7 +244,7 @@ color: #2e2f42;
  }
  .button:hover,
  .button:focus {
-    background-color: #404BBF;
+      background-color: #404BBF;
  }
  /* section strategy */
  .icon-items {
