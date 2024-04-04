@@ -59,7 +59,9 @@ ul {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header .container {
     display: flex;
@@ -194,12 +196,13 @@ color: #2e2f42;
  /* section hero */
 .hero {
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.4)), url("../images/hero-foto.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-foto.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 188px 0;
-    min-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
    
 }
@@ -251,6 +254,7 @@ color: #2e2f42;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8px;
     background-color: #f4f4fd;
     border: 1px solid #8e8f99;
     border-radius: 4px;
@@ -320,15 +324,17 @@ margin-top: 8px;
     background-color: #4d5ae5;
     width: 100%;
     height: 100%;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color;
 }
 .team-wrapper:hover,
 .team-wrapper:focus {
 background-color: #404bbf;
 }
+.userpic {
+fill: #f4f4fd;;
 
+}
  .team-link {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
@@ -387,7 +393,7 @@ padding: 32px 0;
     top: 0;
     left: 0;
     transform: translateY(100%);
-    padding: 32px;
+    padding: 40px 32px;
     width: 100%;
     height: 100%;
     font-size: 16px;
@@ -396,8 +402,7 @@ padding: 32px 0;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     background-color: #4d5ae5;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background-color;
 }
 .port-link:hover .overlay {
@@ -410,8 +415,9 @@ padding: 32px 0;
     background-color: #2e2f42;
     padding: 100px 0;
 }
- 
-
+ .footer-logo-text {
+    margin-right: 120px;
+ }
 .text-footer {
     font-weight: 400;
     font-size: 16px;
@@ -422,7 +428,31 @@ padding: 32px 0;
 }
 .box-footer {
     display: flex;
+    align-items: baseline;
 
+
+}
+.team-pack-footer {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-top: 16px;
+}
+.team-wrapper-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+}
+.team-wrapper-footer:hover,
+.team-wrapper-footer:focus{
+    background-color: #31d0aa;
 }
 .social-text {
     font-weight: 500;
